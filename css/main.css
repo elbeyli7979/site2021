@@ -1,0 +1,473 @@
+body {
+  font-family: var(--yazilar-font);
+  background-color: var(--zemin);
+}
+
+:root {
+  --yazilar-font: "Montserrat", sans-serif;
+  --baslik-font: "Merriweather", serif;
+  --el-font: "Amatic SC", cursive;
+  --bolum: #18181a;
+  --icerik: #e5b622;
+  --bolum2: #bf3e43;
+  --zemin: #bec2c1;
+  --gradient: linear-gradient(rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.8));
+}
+.navi-arka {
+  background-color: var(--bolum);
+}
+.navigasyon {
+  height: 100px !important;
+  width: 1140px;
+  margin: auto;
+}
+.navigasyon img {
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+.navi {
+  width: 100%;
+  margin: auto;
+  padding: 0px 10px;
+}
+.menu-toggle {
+  float: right;
+  font-size: 32px;
+  color: white;
+  line-height: 80px !important;
+  display: none !important;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--gradient),
+    url("../malzeme/foto/1.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--gradient),
+    url("../malzeme/tasarim-res/3.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+}
+.bonus {
+  color: var(--icerik) !important;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.kapsa a {
+  color: var(--icerik);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.linkler {
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+.kapsa {
+  width: 120px;
+  margin-right: 30px;
+}
+.active {
+  height: 2px;
+  width: 120px;
+  background-color: white;
+  display: block;
+}
+.line {
+  height: 2px;
+  width: 0px;
+  background-color: white;
+  visibility: hidden;
+  /*display: none; Animasyon gerÃ§ekleÅŸmediÄŸinden visible Ã¶zelliÄŸi kullanÄ±ldÄ±*/
+  transition: all 1s ease;
+}
+.kapsa a:hover ~ .line {
+  /* ~ bu iÅŸaret a elementinden hemen sonra gelen anlamÄ±ndadÄ±r. */
+  visibility: visible !important;
+  /*display: block !important;*/
+  width: 120px;
+}
+
+.slogan {
+  color: white;
+  width: 650px;
+}
+.hizmetler {
+  position: relative;
+  top: 100vh;
+}
+.hizmet {
+  height: 300px;
+}
+.hizmet h2 {
+  font-weight: 700;
+}
+.hizmet1 {
+  background: var(--gradient),
+    url("../malzeme/tasarim-res/1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.hizmet2 {
+  background: var(--gradient),
+    url("../malzeme/tasarim-res/2.jpg") no-repeat center center;
+  background-size: cover;
+}
+.hizmet3 {
+  background: var(--gradient),
+    url("../malzeme/tasarim-res/3.jpg") no-repeat center center;
+  background-size: cover;
+}
+.hizmet4 {
+  background: var(--gradient),
+    url("../malzeme/tasarim-res/4.jpg") no-repeat center center;
+  background-size: cover;
+}
+section {
+  position: relative;
+  top: calc(100vh + 100px);
+}
+.sayfalar {
+  position: relative;
+  top: calc(50vh + 50px);
+}
+.sahip-mesaj img {
+  height: 600px;
+}
+.sahip-mesaj hr {
+  width: 150px;
+  height: 1px;
+  background-color: var(--icerik);
+  float: left;
+}
+.sahip-mesaj p {
+  float: left;
+}
+.ara-kat {
+  background: var(--gradient),
+    url("../malzeme/tasarim-res/ara-kat.jpg") no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+.ara-kat1 {
+  background: var(--gradient),
+    url("../malzeme/tasarim-res/ara-kat1.jpg") no-repeat center center;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+}
+.ara-kat2 {
+  background: var(--gradient),
+    url("../malzeme/tasarim-res/ara-kat2.jpg") no-repeat center center;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+}
+.ara-kat3 {
+  background: var(--gradient),
+    url("../malzeme/tasarim-res/ara-kat-3.jpg") no-repeat center center;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+}
+.ara-kat4 {
+  background: var(--gradient),
+    url("../malzeme/tasarim-res/ara-kat-4.jpg") no-repeat center center;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+}
+.dondur {
+  transform: rotate(-10deg);
+  font-family: var(--el-font);
+  font-size: 36px;
+}
+.soz {
+  background-color: var(--bolum);
+}
+blockquote {
+  display: block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  float: left;
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+
+  /*Borders - (Optional)*/
+  border-left: 15px solid #c76c0c;
+  border-right: 2px solid #c76c0c;
+
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+blockquote::before {
+  content: "\201C"; /*Unicode for Left Double Quote*/
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+blockquote::after {
+  /*Reset to make sure*/
+  content: "";
+}
+.soz hr {
+  width: 150px;
+  height: 3px;
+  background-color: var(--icerik);
+  float: left;
+  transition: 0.5s ease;
+}
+.esnaf {
+  margin-top: 70px !important;
+}
+.esnaf:hover hr {
+  width: 300px;
+}
+.esnaf p {
+  float: left;
+}
+.takim img {
+  height: 300px;
+}
+.takim .card-title {
+  font-family: var(--el-font);
+  font-size: 32px;
+  font-weight: 700;
+}
+.telefon {
+  background-color: var(--icerik);
+}
+.telefon_yuk {
+  height: 200px;
+}
+.telefon_yuk h3 {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 992px) {
+  .navigasyon {
+    height: 100px !important;
+    width: 100%;
+    margin: auto;
+  }
+  .menu-toggle {
+    display: block !important;
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  .hizmet-kapsam {
+    width: 100% !important;
+  }
+  .hizmet-kapsam hr {
+    width: 20px !important;
+  }
+  .hizmet-kapsam h2 {
+    font-size: 20px !important;
+  }
+  .linkler {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    /*border-top: 100vh solid transparent;
+      border-bottom: 100vh solid transparent;
+      border-right: 900px solid rgba(200, 150, 25, .5);*/
+    background-color: rgba(200, 150, 25, 1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    right: 0;
+    display: none;
+  }
+  .linkler .kapsa {
+    margin-bottom: 50px;
+    margin-right: 0px;
+  }
+  .linkler .kapsa a {
+    color: var(--bolum);
+  }
+  .ac-kapa {
+    display: flex !important;
+  }
+
+  .takim img {
+    height: 150px !important;
+    width: 150px !important;
+    border-radius: 75px !important;
+    margin: auto;
+    transition: 0.5s ease;
+  }
+  .takim img:hover {
+    height: 200px !important;
+    width: 200px !important;
+    border-radius: 100px !important;
+  }
+  .takim {
+    text-align: center !important;
+  }
+  .telefon_yuk h3 {
+    font-size: 16px !important;
+  }
+  .slogan {
+    margin-left: 30px !important;
+  }
+}
+.firma img {
+  height: 85px !important;
+  margin: auto;
+}
+.footer {
+  background-color: var(--bolum);
+  font-size: 12px;
+  color: white;
+}
+.footer a {
+  color: var(--icerik);
+  font-size: 12px;
+}
+.yukari_cik {
+  display: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  background-color: black;
+  color: var(--icerik) !important;
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  transition: 0.5s ease;
+}
+.yukari_cik:hover {
+  cursor: pointer;
+  background-color: var(--bolum2);
+  color: var(--bolum) !important;
+  transform: rotate(180deg);
+}
+
+/* Hizmetlerimiz KÄ±smÄ± */
+
+.hizmet-kapsam {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.hizmet-kapsam hr {
+  background-color: var(--icerik);
+  height: 2px;
+  width: 100px;
+  transition: 1s ease;
+}
+.hizmet-kapsam:hover hr {
+  width: 50%;
+}
+.hizmet-kapsam h3 {
+  font-weight: 700;
+}
+.key-kapsa {
+  height: 80px;
+  width: 100px;
+  background-color: var(--icerik);
+  text-align: center;
+  line-height: 100px;
+  border-radius: 5px;
+}
+
+/* Hizmetlerimiz KÄ±smÄ± */
+
+.card-block {
+  margin: 20px !important;
+}
+.card a {
+  color: var(--bolum2) !important;
+  text-decoration: none !important;
+  font-weight: 700;
+}
+
+/* HakkÄ±mÄ±zda KÄ±smÄ± */
+
+.hakkimizda-resim {
+  height: 450px !important;
+}
+.guven a i {
+  color: var(--bolum2);
+}
+
+/* Ä°letiÅŸim KÄ±smÄ± */
+.sosyal-medya {
+  text-align: center;
+  display: block;
+}
+.sosyal-medya a {
+  text-decoration: none;
+  color: var(--icerik) !important;
+  background-color: var(--bolum);
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 135px !important;
+  display: inline-block;
+  transition: 0.5s ease;
+}
+.sosyal-medya a:hover {
+  background-color: var(--bolum2);
+  border-radius: 20px;
+  color: var(--bolum) !important;
+}
+.iletisim-baslik {
+  font-family: var(--el-font);
+  font-size: 32px;
+  font-weight: 700;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
